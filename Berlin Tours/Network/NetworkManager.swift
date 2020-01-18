@@ -13,12 +13,6 @@ struct NetworkManager {
     
     private static let travelersProvider = MoyaProvider<TravelersApi>()
     
-    private static let jsonDecoder: JSONDecoder = {
-        let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .formatted(SpecialDateFormatter.networkFormat)
-        return decoder
-    }()
-    
     private static func performGetRequest<T: Decodable> (
         request: TravelersApi,
         responseType: T.Type,
@@ -28,6 +22,7 @@ struct NetworkManager {
             switch result {
             case .success(let response):
                 do {
+                    let jsonDecoder = JsonDecoder.defaultDecoder
                     let decodedResponse = try jsonDecoder.decode(responseType, from: response.data)
                     completion(decodedResponse, nil, true)
                 } catch {
