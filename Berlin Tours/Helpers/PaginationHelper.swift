@@ -9,7 +9,7 @@
 import Foundation
 
 struct PaginationHelper {
-    static let defaultLimit = 10
+    static let defaultLimit = 15
     static func parameters(page: Int, limitPerPage: Int = defaultLimit) -> [String: Any] {
         let pageIndex = page - 1
         return [
