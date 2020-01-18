@@ -18,7 +18,7 @@ struct SpecialDateFormatter {
     
     static var uiFormat: DateFormatter {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm a"
+        formatter.dateFormat = "yyyy-MM-dd hh:mm a"
         return formatter
     }
     
