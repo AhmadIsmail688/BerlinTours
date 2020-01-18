@@ -3,13 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		391F826123D2879100F3AA4D /* ReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391F826023D2879100F3AA4D /* ReviewViewModel.swift */; };
+		391F826623D28D5400F3AA4D /* ReviewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391F826523D28D5400F3AA4D /* ReviewsListViewModel.swift */; };
+		3961800D23D1F02A00B55511 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3961800C23D1F02A00B55511 /* KingfisherSwiftUI */; };
+		3961801023D1F06700B55511 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 3961800F23D1F06700B55511 /* Moya */; };
+		3961801323D1F21D00B55511 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3961801223D1F21D00B55511 /* Review.swift */; };
+		3961801623D1F57C00B55511 /* TravelersApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3961801523D1F57C00B55511 /* TravelersApi.swift */; };
+		3961801923D2034100B55511 /* PaginationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3961801823D2034100B55511 /* PaginationHelper.swift */; };
+		3961801B23D2257C00B55511 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3961801A23D2257C00B55511 /* NetworkManager.swift */; };
+		3961802023D25E6B00B55511 /* SpecialDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3961801F23D25E6B00B55511 /* SpecialDateFormatter.swift */; };
+		3961802323D2603A00B55511 /* ReviewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3961802223D2603A00B55511 /* ReviewsListView.swift */; };
 		39FB8ED823D1E4F40069BF43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FB8ED723D1E4F40069BF43 /* AppDelegate.swift */; };
 		39FB8EDA23D1E4F40069BF43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FB8ED923D1E4F40069BF43 /* SceneDelegate.swift */; };
-		39FB8EDC23D1E4F40069BF43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FB8EDB23D1E4F40069BF43 /* ContentView.swift */; };
 		39FB8EDE23D1E4FA0069BF43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39FB8EDD23D1E4FA0069BF43 /* Assets.xcassets */; };
 		39FB8EE123D1E4FA0069BF43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39FB8EE023D1E4FA0069BF43 /* Preview Assets.xcassets */; };
 		39FB8EE423D1E4FA0069BF43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FB8EE223D1E4FA0069BF43 /* LaunchScreen.storyboard */; };
@@ -35,10 +44,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		391F826023D2879100F3AA4D /* ReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModel.swift; sourceTree = "<group>"; };
+		391F826523D28D5400F3AA4D /* ReviewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsListViewModel.swift; sourceTree = "<group>"; };
+		3961801223D1F21D00B55511 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		3961801523D1F57C00B55511 /* TravelersApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelersApi.swift; sourceTree = "<group>"; };
+		3961801823D2034100B55511 /* PaginationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationHelper.swift; sourceTree = "<group>"; };
+		3961801A23D2257C00B55511 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3961801F23D25E6B00B55511 /* SpecialDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialDateFormatter.swift; sourceTree = "<group>"; };
+		3961802223D2603A00B55511 /* ReviewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsListView.swift; sourceTree = "<group>"; };
 		39FB8ED423D1E4F40069BF43 /* Berlin Tours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Berlin Tours.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FB8ED723D1E4F40069BF43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39FB8ED923D1E4F40069BF43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		39FB8EDB23D1E4F40069BF43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		39FB8EDD23D1E4FA0069BF43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39FB8EE023D1E4FA0069BF43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		39FB8EE323D1E4FA0069BF43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3961801023D1F06700B55511 /* Moya in Frameworks */,
+				3961800D23D1F02A00B55511 /* KingfisherSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +94,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		391F825F23D286B100F3AA4D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				391F826523D28D5400F3AA4D /* ReviewsListViewModel.swift */,
+				391F826023D2879100F3AA4D /* ReviewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3961801123D1F15F00B55511 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3961801223D1F21D00B55511 /* Review.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3961801423D1F4DE00B55511 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3961801523D1F57C00B55511 /* TravelersApi.swift */,
+				3961801A23D2257C00B55511 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3961801723D2032C00B55511 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3961801823D2034100B55511 /* PaginationHelper.swift */,
+				3961801F23D25E6B00B55511 /* SpecialDateFormatter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3961802123D2602500B55511 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3961802223D2603A00B55511 /* ReviewsListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3961802423D260B000B55511 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				39FB8EE523D1E4FA0069BF43 /* Info.plist */,
+				39FB8ED723D1E4F40069BF43 /* AppDelegate.swift */,
+				39FB8ED923D1E4F40069BF43 /* SceneDelegate.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		3961802523D2610800B55511 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				39FB8EDD23D1E4FA0069BF43 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3961802623D2611E00B55511 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				39FB8EE223D1E4FA0069BF43 /* LaunchScreen.storyboard */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
 		39FB8ECB23D1E4F40069BF43 = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +186,14 @@
 		39FB8ED623D1E4F40069BF43 /* Berlin Tours */ = {
 			isa = PBXGroup;
 			children = (
-				39FB8ED723D1E4F40069BF43 /* AppDelegate.swift */,
-				39FB8ED923D1E4F40069BF43 /* SceneDelegate.swift */,
-				39FB8EDB23D1E4F40069BF43 /* ContentView.swift */,
-				39FB8EDD23D1E4FA0069BF43 /* Assets.xcassets */,
-				39FB8EE223D1E4FA0069BF43 /* LaunchScreen.storyboard */,
-				39FB8EE523D1E4FA0069BF43 /* Info.plist */,
+				3961801123D1F15F00B55511 /* Model */,
+				3961802123D2602500B55511 /* View */,
+				391F825F23D286B100F3AA4D /* ViewModel */,
+				3961801423D1F4DE00B55511 /* Network */,
+				3961801723D2032C00B55511 /* Helpers */,
+				3961802523D2610800B55511 /* Resources */,
+				3961802423D260B000B55511 /* Supporting */,
+				3961802623D2611E00B55511 /* Interface */,
 				39FB8EDF23D1E4FA0069BF43 /* Preview Content */,
 			);
 			path = "Berlin Tours";
@@ -152,6 +241,10 @@
 			dependencies = (
 			);
 			name = "Berlin Tours";
+			packageProductDependencies = (
+				3961800C23D1F02A00B55511 /* KingfisherSwiftUI */,
+				3961800F23D1F06700B55511 /* Moya */,
+			);
 			productName = "Berlin Tours";
 			productReference = 39FB8ED423D1E4F40069BF43 /* Berlin Tours.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +317,10 @@
 				Base,
 			);
 			mainGroup = 39FB8ECB23D1E4F40069BF43;
+			packageReferences = (
+				3961800B23D1F02A00B55511 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				3961800E23D1F06700B55511 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 39FB8ED523D1E4F40069BF43 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,9 +364,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				391F826623D28D5400F3AA4D /* ReviewsListViewModel.swift in Sources */,
 				39FB8ED823D1E4F40069BF43 /* AppDelegate.swift in Sources */,
+				391F826123D2879100F3AA4D /* ReviewViewModel.swift in Sources */,
+				3961802023D25E6B00B55511 /* SpecialDateFormatter.swift in Sources */,
+				3961802323D2603A00B55511 /* ReviewsListView.swift in Sources */,
+				3961801323D1F21D00B55511 /* Review.swift in Sources */,
 				39FB8EDA23D1E4F40069BF43 /* SceneDelegate.swift in Sources */,
-				39FB8EDC23D1E4F40069BF43 /* ContentView.swift in Sources */,
+				3961801B23D2257C00B55511 /* NetworkManager.swift in Sources */,
+				3961801923D2034100B55511 /* PaginationHelper.swift in Sources */,
+				3961801623D1F57C00B55511 /* TravelersApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +542,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Berlin Tours/Preview Content\"";
 				DEVELOPMENT_TEAM = L5WD9S6X36;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Berlin Tours/Info.plist";
+				INFOPLIST_FILE = "Berlin Tours/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +550,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AhmadIsmail.Berlin-Tours";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -458,7 +562,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Berlin Tours/Preview Content\"";
 				DEVELOPMENT_TEAM = L5WD9S6X36;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Berlin Tours/Info.plist";
+				INFOPLIST_FILE = "Berlin Tours/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,7 +570,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AhmadIsmail.Berlin-Tours";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -594,6 +698,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3961800B23D1F02A00B55511 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.0;
+			};
+		};
+		3961800E23D1F06700B55511 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3961800C23D1F02A00B55511 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3961800B23D1F02A00B55511 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+		3961800F23D1F06700B55511 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3961800E23D1F06700B55511 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 39FB8ECC23D1E4F40069BF43 /* Project object */;
 }
