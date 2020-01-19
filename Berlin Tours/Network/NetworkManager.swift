@@ -22,13 +22,16 @@ struct NetworkManager {
             switch result {
             case .success(let response):
                 do {
+                    let successResponse = try response.filterSuccessfulStatusCodes()
                     let jsonDecoder = JsonDecoder.defaultDecoder
-                    let decodedResponse = try jsonDecoder.decode(responseType, from: response.data)
+                    let decodedResponse = try jsonDecoder.decode(responseType, from: successResponse.data)
                     completion(decodedResponse, nil, true)
                 } catch {
-                    print("Decoding error: ", error)
+                    print(error.localizedDescription)
+                    completion(nil, error, false)
                 }
             case .failure(let error):
+                print(error.localizedDescription)
                 completion(nil, error, false)
             }
         }
