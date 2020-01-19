@@ -10,12 +10,15 @@ import SwiftUI
 
 struct ReviewsListView: View {
     
-    @ObservedObject var reviewsListViewModel = ReviewsListViewModel()
+    @ObservedObject var reviewsList = ReviewsListViewModel()
     
     var body: some View {
         NavigationView {
-            List(reviewsListViewModel.reviews) { review in
+            List(reviewsList.reviews) { review in
                 ReviewView(review: review)
+                    .onAppear {
+                        self.reviewsList.loadMore(currentItem: review)
+                }
             }
             .navigationBarTitle("Reviews")
         }
