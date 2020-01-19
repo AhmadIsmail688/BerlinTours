@@ -117,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				3961801223D1F21D00B55511 /* Review.swift */,
-				391F826923D359A100F3AA4D /* DummyData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -127,7 +126,6 @@
 			children = (
 				3961801523D1F57C00B55511 /* TravelersApi.swift */,
 				3961801A23D2257C00B55511 /* NetworkManager.swift */,
-				391F826B23D35BEF00F3AA4D /* JSONDecoder.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -178,6 +176,32 @@
 			path = Interface;
 			sourceTree = "<group>";
 		};
+		397E66C323D4F9BD002F831B /* Data Provider */ = {
+			isa = PBXGroup;
+			children = (
+				397E66C423D4F9CB002F831B /* Local */,
+				3961801423D1F4DE00B55511 /* Network */,
+				397E66C523D4F9FF002F831B /* Decoder */,
+			);
+			path = "Data Provider";
+			sourceTree = "<group>";
+		};
+		397E66C423D4F9CB002F831B /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				391F826923D359A100F3AA4D /* DummyData.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		397E66C523D4F9FF002F831B /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				391F826B23D35BEF00F3AA4D /* JSONDecoder.swift */,
+			);
+			path = Decoder;
+			sourceTree = "<group>";
+		};
 		39FB8ECB23D1E4F40069BF43 = {
 			isa = PBXGroup;
 			children = (
@@ -204,7 +228,7 @@
 				3961801123D1F15F00B55511 /* Model */,
 				3961802123D2602500B55511 /* View */,
 				391F825F23D286B100F3AA4D /* ViewModel */,
-				3961801423D1F4DE00B55511 /* Network */,
+				397E66C323D4F9BD002F831B /* Data Provider */,
 				3961801723D2032C00B55511 /* Helpers */,
 				3961802523D2610800B55511 /* Resources */,
 				3961802423D260B000B55511 /* Supporting */,
