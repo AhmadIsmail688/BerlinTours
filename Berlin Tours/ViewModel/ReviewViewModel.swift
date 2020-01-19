@@ -10,8 +10,7 @@ import Foundation
 
 class ReviewViewModel: Identifiable {
     
-    let authorName: String
-    let authorCountry: String
+    let authorNameAndCountry: String
     let authorPhotoUrl: URL?
     
     let title: String
@@ -25,13 +24,15 @@ class ReviewViewModel: Identifiable {
 
     
     init(review: Review) {
-        authorName = review.author.fullName
-        authorCountry = review.author.country
+        
+        let fullName = review.author.fullName
+        let country = review.author.country
+        authorNameAndCountry = "\(fullName), \(country)"
         authorPhotoUrl = review.author.photo
         
         title = review.title
         message = review.message
-        enjoyment = review.enjoyment
+        enjoyment = review.enjoyment.isEmpty ? "" : "Enjoyment: \(review.enjoyment)"
         
         rating = review.rating
         creationDate = SpecialDateFormatter.uiFormat.string(from: review.created)
