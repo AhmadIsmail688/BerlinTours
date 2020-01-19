@@ -31,7 +31,7 @@ class ReviewViewModel: Identifiable {
         
         let fullName = review.author.fullName
         let country = review.author.country ?? ""
-        authorNameAndCountry = "\(fullName) \(country.isEmpty ? "" : ", ")\(country)"
+        authorNameAndCountry = "\(fullName)\(country.isEmpty ? "" : ", ")\(country)"
         authorPhotoUrl = review.author.photo
         
         title = review.title
