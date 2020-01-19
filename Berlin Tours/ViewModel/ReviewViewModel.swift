@@ -10,6 +10,8 @@ import Foundation
 
 class ReviewViewModel: Identifiable {
     
+    let id: Int
+    
     let authorNameAndCountry: String
     let authorPhotoUrl: URL?
     
@@ -25,9 +27,11 @@ class ReviewViewModel: Identifiable {
     
     init(review: Review) {
         
+        id = review.id
+        
         let fullName = review.author.fullName
-        let country = review.author.country
-        authorNameAndCountry = "\(fullName), \(country)"
+        let country = review.author.country ?? ""
+        authorNameAndCountry = "\(fullName) \(country.isEmpty ? "" : ", ")\(country)"
         authorPhotoUrl = review.author.photo
         
         title = review.title

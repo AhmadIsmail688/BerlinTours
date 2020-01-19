@@ -31,7 +31,7 @@ struct Review: Decodable {
 
 struct Author: Decodable {
     let fullName: String
-    let country: String
+    let country: String?
     let photo: URL?
 }
 
